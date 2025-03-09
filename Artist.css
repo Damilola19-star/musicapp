@@ -1,0 +1,197 @@
+/* General Styles */
+.artist-container {
+  padding: 20px;
+  font-family: "Arial", sans-serif;
+  background-color: #f8f8f8;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Artist Header */
+.artist-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+
+.artist-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.follow-button {
+  background-color: #6a0dad;
+  color: white;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.follow-button:hover {
+  background-color: #5500a3;
+}
+
+.follow-button.following {
+  background-color: gray;
+}
+
+.follow-button.following:hover {
+  background-color: darkgray;
+}
+
+/* Navigation Tabs */
+.tabs {
+  display: flex;
+  gap: 20px;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.tab {
+  cursor: pointer;
+  font-weight: bold;
+  color: #555;
+  position: relative;
+  padding-bottom: 5px;
+  transition: color 0.3s ease;
+}
+
+.tab:hover {
+  color: #6a0dad;
+}
+
+.tab::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #6a0dad;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.tab:hover::after {
+  width: 100%;
+}
+
+/* Top Tracks */
+.top-tracks ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.track {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  background: white;
+  transition: background 0.3s;
+  border-radius: 5px;
+}
+
+.track:hover {
+  background: #f0f0f0;
+}
+
+.track-icons {
+  display: flex;
+  align-items: center;
+}
+
+.track-icons .icon {
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: transform 0.2s ease;
+}
+
+.track-icons .icon:hover {
+  transform: scale(1.2);
+  color: #6a0dad;
+}
+
+/* Latest Release */
+.latest-release {
+  margin-top: 30px;
+}
+
+.release-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.release-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.release-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+}
+
+.release-card h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.release-card p {
+  margin: 5px 0 0;
+  color: #777;
+}
+
+.release-card .icon {
+  margin-left: auto;
+  font-size: 20px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.release-card .icon:hover {
+  color: #6a0dad;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .artist-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .tabs {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .release-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .release-card .icon {
+    margin: 10px 0 0;
+  }
+}

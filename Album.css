@@ -1,0 +1,76 @@
+.album-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    max-width: 800px;
+    margin: auto;
+}
+
+.album-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.album-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.listen-button {
+    background-color: #6a0dad;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    transition: background 0.3s ease-in-out;
+}
+
+.listen-button:hover {
+    background-color: #5a0cb5;
+}
+
+.tracklist {
+    margin-top: 20px;
+}
+
+.tracklist ul {
+    list-style: none;
+    padding: 0;
+}
+
+.track {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.track:hover {
+    background: #f1f1f1;
+}
+
+.track-icons .icon {
+    margin-left: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.track-icons .icon:hover {
+    transform: scale(1.2);
+}
+
+.track-icons .liked {
+    color: red;
+}

@@ -1,0 +1,58 @@
+.lyrics-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ff6b4a;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.album-art img {
+  width: 200px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.lyrics-text {
+  font-size: 18px;
+  font-weight: 400;
+  max-width: 600px;
+}
+
+.lyrics-text p {
+  margin: 10px 0;
+}
+
+.highlight {
+  font-weight: bold;
+  color: white;
+}
+
+.fade {
+  opacity: 0.6;
+}
+
+.player {
+  position: fixed;
+  bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: #282828;
+  padding: 10px;
+}
+
+.player-icon {
+  font-size: 24px;
+  margin: 0 10px;
+  cursor: pointer;
+  color: white;
+}
+
+.play {
+  font-size: 28px;
+}
